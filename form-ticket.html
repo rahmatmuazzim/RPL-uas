@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Get Ticket</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  
+</head>
+
+
+<style>
+
+	.carousel-item .img-slider{
+	
+	 <!-- object-fit: cover;width: 100%;height: calc(100vh - 255px) !important; -->
+	 
+	 object-fit: cover; width: 100% ; height: 100vh !important;
+	 
+	 }
+	 
+	 @media only screen and (max-width: 992px) {
+  .carousel-item .img-slider {
+   object-fit: cover;width: 100%;height: calc(100vh - 255px) !important;
+  }
+  
+  .footer {
+	  text-align:center;
+  }
+
+
+
+  
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+  }
+
+</style>
+<body style="height:1500px">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color:#006400">
+  <a class="navbar-brand" href="media/logo1.jpg">
+      <img src="media/logo1.jpg" alt="Logo" width="10%"  class="d-inline-block align-text-top">
+	</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-white">
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="form-ticket.html">Reservation</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link text-white" href="kontak.html">Contact</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link text-white" href="login.html">Login</a>
+      </li>
+     
+    </ul>
+    
+  </div>
+</nav>
+
+
+
+
+ 
+	<!-- JUMBOTRON -->
+	
+<div class="jumbotron text-white mt-5" style="background-color:#006400">
+	<div class="container">
+	<div class="text-center">
+	  <h1 class="font-weight-bold">Daftar Menjadi Member Sekarang Juga !</h1>
+	  <p class="lead">Dapatkan diskon hinga 25% dan banyak keuntungan lainnya </p>
+	  <hr class="my-4">
+	 
+	  <p class="lead">
+		<a class="badge btn-primary btn-lg p-2" href="regis.html" role="button">Daftar Sekarang !</a>
+	  </p>
+	</div>
+	</div>
+</div>
+	
+	
+	<!-- FORM PESAN TIKET -->
+	
+	<div class="mb-3" style="background-color:">
+		<div class="container">
+		
+			<h1 class="text-black"><b>Get Ticket</b></h1>
+		</div>
+	</div>
+	<div class="container mb-5">
+		<div class="card" >
+		  <div class="card-body">
+		 
+			
+			
+			<form onsubmit="return false">
+			 <div class="row">
+				<div class="col-md-4">
+				  <div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Nama</label>
+					<input type="text" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">No Handphone</label>
+					<input type="number" required  class="form-control" id="exampleInputPassword1">
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Email</label>
+					<input type="email" required class="form-control" id="exampleInputPassword1">
+				  </div>
+				</div>
+				
+				<div class="col-md-12">
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Event</label>
+					<select  required  class="form-control" >
+						<option value="">Pilih</option>
+						<option value="1">REBULATION</option>
+						<option value="2">SOMBANUSA : MUSRARY</option>
+						<option value="3">DHYO HAW-SABIPHORIA</option>
+					</select>
+				  </div>
+				</div>
+				
+				
+				<div class="col-md-6">
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Type Tiket</label>
+					<select  required class="form-control" id="harga" >
+						<option value="">Pilih</option>
+						<option value="1">Tribun A (Rp. 100.000)</option>
+						<option value="2">Tribun B (Rp. 150.000)</option>
+						<option value="3">Tribun C (Rp. 175.000)</option>
+						<option value="4">VIP (Rp. 200.000)</option>
+						<option value="5">VVIP (Rp. 225.000)</option>
+					</select>
+				  </div>
+				</div>
+				
+				<div class="col-md-6">
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label" >Jumlah Tiket</label>
+					<input  required type="number" class="form-control" id="jumlah">
+				  </div>
+				</div>
+				
+				<div class="col-md-12">
+				  <div class="mb-3">
+					<label for="exampleInputPassword1"  class="form-label" >Total (Rp)</label>
+					<input  type="" class="form-control"  readonly id="total">
+				  </div>
+				</div>
+				<div class="col-md-12">
+					<button type="submit" id="calculate" class="btn btn-danger btn-block">Get Ticket</button>
+				</div>
+			  </div>
+			</form>
+			
+			
+		
+		</div>
+				
+				
+		</div>
+	</div>
+	
+	
+	<div class="mb-3" style="background-color:">
+		<div class="container">
+		
+			<h1 class="text-black"><b>Cara Pembayaran</b></h1>
+		</div>
+	</div>
+	<div class="container mb-5">
+	
+	<p>
+	  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+		Mobile Banking
+	  </a>
+	  
+	  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+		 Internet Banking 
+	  </a>
+	   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+		 ATM
+	  </a>
+	</p>
+
+
+	<div class="collapse" id="collapseExample1">
+	  <div class="card card-body">
+		
+		
+		 <ul>
+		  <li>Login Mobile Banking</li>
+		  <li>Pilih m-Transfer</li>
+		  <li>Input Nomor Virtual Account 70070xxxxxxxxxxx</li>
+		  <li>Klik Send</li>
+		  <li>Informasi Virtual Account akan ditampilkan</li>
+		  <li>Klik OK</li>
+		  <li>Input PIN Mobile Banking</li>
+		  <li>Bukti bayar ditampilkan</li>
+		  <li>Selesai</li>
+		</ul> 
+		
+  </div>
+	</div>
+	
+	<div class="collapse" id="collapseExample2">
+	  <div class="card card-body">
+		
+		<ul>
+		  <li>Login Internet Banking</li>
+		  <li>Pilih Transaksi Dana</li>
+		  <li>Pilih Transfer Ke BCA Virtual Account/li>
+		  <li>Input Nomor Virtual Account 70070xxxxxxxxxxx</li>
+		  <li>Klik Lanjutkan</li>
+		  <li>Input Respon KeyBCA Appli 1</li>
+		  <li>Klik Kirim</li>
+		  <li>Bukti bayar ditampilkan</li>
+		  <li>Selesai</li>
+		</ul> 
+		
+		
+	  </div>
+	</div>
+	
+	<div class="collapse" id="collapseExample2">
+	  <div class="card card-body">
+		
+		<ul>
+		  <li>Login Internet Banking</li>
+		  <li>Pilih Transaksi Dana</li>
+		  <li>Pilih Transfer Ke BCA Virtual Account/li>
+		  <li>Input Nomor Virtual Account 70070xxxxxxxxxxx</li>
+		  <li>Klik Lanjutkan</li>
+		  <li>Input Respon KeyBCA Appli 1</li>
+		  <li>Klik Kirim</li>
+		  <li>Bukti bayar ditampilkan</li>
+		  <li>Selesai</li>
+		</ul> 
+		
+		
+	  </div>
+	  
+	</div>
+	
+	<div class="collapse" id="collapseExample3">
+	  <div class="card card-body">
+		
+		<ul>
+		  <li>Input kartu ATM dan PIN Anda</li>
+		  <li>Pilih Menu Transaksi Lainnya</li>
+		  <li>Pilih Transfer</li>
+		  <li>Pilih Ke rekening BCA Virtual Account</li>
+		  <li>Input Virtual Account Number 70070xxxxxxxxxxx</li>
+		  <li>Pilih Benar dan selesaikan pembayaran</li>
+		  <li>Selesai</li>
+		
+		</ul> 
+		
+		
+	  </div>
+	</div>
+	
+	<div class="collapse" id="collapseExample3">
+	  <div class="card card-body">
+		Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+	  </div>
+	</div>
+
+
+
+
+
+
+		
+	</div>
+	
+	
+	
+
+
+<div class="mb-3" style="background-color:#006400">
+		<div class="container">
+		
+		<h1 class="text-white"><b>The Show !</b></h1>
+		
+		
+		
+	
+		
+		</div>
+	</div>
+
+<div class="container">
+
+
+<table class="table mt-5">
+ 
+	<tbody>
+		<tr>
+		  <th scope="row text-center"><center>1</center></th>
+		  <td>TONY Q : PEKAN GEMBIRA RIA</td>
+		  <td>15 Januari 2024 - Ecopark Ancol </td>
+		  <td><span class="badge badge-danger">Sold Out !  </span></td>
+		</tr>
+		<tr>
+		  <th scope="row"><center>2</center></th>
+		  <td>THE PAPS : MAROON DAY</td>
+		  <td>4 Desember 2023 - Blok F Trade Center LT.3</td>
+		   <td><span class="badge badge-danger">Sold Out !  </span></td>
+		</tr>
+		<tr>
+		  <th scope="row"><center>3</center></th>
+		  <td >REBULATION</td>
+		  <td>20 Januari 2024 - Jakarta International Stadium(JIS)</td>
+		  <td><span class="badge badge-success">Available  </span></td>
+		</tr>
+		
+		<tr>
+		  <th scope="row"><center>4</center></th>
+		  <td >MONKEY BOOTS BIG MONKEY</td>
+		  <td>2 Maret 2024 - Gelora Bung Karno Stadium</td>
+		  <td><span class="badge badge-danger">Sold Out !  </span></td>
+		</tr>
+		<tr>
+		  <th scope="row"><center>5</center></th>
+		  <td >DHYO HAW-SABIPHORIA</td>
+		  <td>10 Maret 2024 - Balai Sarbini Jakarta</td>
+		  <td><span class="badge badge-success">Available  </span></td>
+		</tr>
+		<tr>
+		  <th scope="row"><center>6</center></th>
+		  <td >SOMBANUSA : MUSRARY</td>
+		  <td>3 Maret 2024 - Padang</td>
+		  <td><span class="badge badge-success">Available  </span></td>
+		</tr>
+	  </tbody>
+	</table>
+
+<div class="text-center">
+	<a href="form-ticket.html"><button class="btn btn-danger">Get Your Ticket</button></a>
+</div>
+</div>
+
+
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Reservation</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-black">&copy; 2024 The Showland | Event Promoter and Ticketing</p>
+  </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	
+	
+	<script>
+	
+	$( document ).ready(function() {
+	
+		$( "#jumlah" ).on( "keyup", function() {
+			
+			harga = $("#harga").val();
+			
+			penambahan = 0;
+			
+			if(harga > 1){
+				penambahan = harga*25000;
+			}
+			
+			total_harga = 100000+penambahan;
+			
+			jumlah = $("#jumlah").val();
+			
+			total = total_harga*jumlah;
+			
+		
+			
+			$("#total").val(addCommas(total));
+			
+			
+			
+			
+			
+			
+		});
+		
+		$( "#calculate" ).on( "click", function() {
+		
+			
+		
+			Swal.fire({
+			  title: 'Terimakasih',
+			  text: 'Silahkan Cek Email Untuk Melihat Invoice dan Panduan Pembayaran',
+			  icon: 'success',
+			  confirmButtonText: 'tutup'
+			});
+			
+			
+		});
+		
+		
+		
+	});
+	
+	
+	function addCommas(nStr)
+{
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+}
+	
+	</script>
+
+</body>
+
+
+
+
+
+</html>
